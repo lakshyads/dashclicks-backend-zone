@@ -1,0 +1,41 @@
+{
+  "databaseName": "dashclick_backend_zone",
+  "createdBy": "Lakshya Dev Singh",
+  "createdAt": "24-May-2021",
+  "relational_collections": {
+    "all_games_at_field": {
+      "fieldId_1": ["game_id_1", "game_id_2"],
+      "fieldId_2": ["game_id_3", "game_id_4"]
+    },
+    "upcoming_games_at_fields": {
+      "fieldId_1": [],
+      "fieldId_2": ["game_id_4"]
+    },
+    "user_stats": {
+      "user_1": {
+        "totalSignups": 2,
+        "totalGamesPlayed": 1,
+        "totalGamesMissed": 1,
+        "lastPlayedAt": "2021-05-21",
+        "totalGamesReviewed": 2
+      },
+      "user_2": {
+        "totalSignups": 2,
+        "totalGamesPlayed": 1,
+        "totalGamesMissed": 0,
+        "lastPlayedAt": null,
+        "totalGamesReviewed": 1
+      }
+    },
+    "available_slots_at_field": {
+      "fieldId_1": [],
+      "fieldId_2": [
+        {
+          "slotId": "field_2_25_6_slot_2",
+          "date": "2021-05-25",
+          "startTime": "12:00:00.000Z"
+        }
+      ]
+    }
+  }
+}
