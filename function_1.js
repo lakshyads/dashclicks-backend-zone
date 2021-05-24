@@ -45,15 +45,19 @@ function function_1(sinceDate = new Date().toISOString().split('T')[0]) {
 
 // Test ===============================================================================
 
-try {
-  console.log(function_1('2021-05-22')); // Expected O/P: [ 'user_1', 'user_2' ]
-  console.log(function_1('2021-05-21')); // Expected O/P: [ 'user_2' ]
-  console.log(function_1()); // Expected O/P: [ 'user_1', 'user_2' ]
+function run() {
+  try {
+    console.log(function_1('2021-05-22')); // Expected O/P: [ 'user_1', 'user_2' ]
+    console.log(function_1('2021-05-21')); // Expected O/P: [ 'user_2' ]
+    console.log(function_1()); // Expected O/P: [ 'user_1', 'user_2' ]
 
-  // Expected O/P: [Error] Invalid parameters: Expected (string) but found (number)
-  console.log(function_1(123));
-} catch (error) {
-  console.log('[Error]', error.message);
+    // Expected O/P: [Error] Invalid parameters: Expected (string) but found (number)
+    console.log(function_1(123));
+  } catch (error) {
+    console.log('[Error]', error.message);
+  }
 }
+
+// run()
 
 module.exports = function_1;

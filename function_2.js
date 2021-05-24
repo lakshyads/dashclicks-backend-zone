@@ -58,12 +58,16 @@ function function_2(avgRating = 0, numPastGames = 1) {
 
 // Test ===============================================================================
 
-try {
-  console.log(function_2(3.4, 5)); // Expected O/P: [ 'user_1', 'user_2' ]
-  console.log(function_2(3.3, 5)); //  Expected O/P: [ 'user_2' ]
-  console.log(function_2(3.4, '5')); // Expected O/P: [Error] Invalid parameters: Expected (number, number) but found (number, string)
-} catch (error) {
-  console.log('[Error]', error.message);
+function run() {
+  try {
+    console.log(function_2(3.4, 5)); // Expected O/P: [ 'user_1', 'user_2' ]
+    console.log(function_2(3.3, 5)); //  Expected O/P: [ 'user_2' ]
+    console.log(function_2(3.4, '5')); // Expected O/P: [Error] Invalid parameters: Expected (number, number) but found (number, string)
+  } catch (error) {
+    console.log('[Error]', error.message);
+  }
 }
+
+// run()
 
 module.exports = function_2;

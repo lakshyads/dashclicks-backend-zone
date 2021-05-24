@@ -66,20 +66,24 @@ function function_3(fieldId, startDate, endDate) {
 
 // Test ===============================================================================
 
-try {
-  // Expected O/P: 0
-  console.log(function_3('fieldId_1', '2021-05-21', '2021-05-29'));
+function run() {
+  try {
+    // Expected O/P: 0
+    console.log(function_3('fieldId_1', '2021-05-21', '2021-05-29'));
 
-  // Expected O/P: 2
-  console.log(function_3('fieldId_1', '2021-05-20', '2021-05-30'));
+    // Expected O/P: 2
+    console.log(function_3('fieldId_1', '2021-05-20', '2021-05-30'));
 
-  // Expected O/P: 1
-  console.log(function_3('fieldId_2', '2021-05-19', '2021-05-29'));
+    // Expected O/P: 1
+    console.log(function_3('fieldId_2', '2021-05-19', '2021-05-29'));
 
-  // Expected O/P: [Error] Invalid parameters: Expected (string, string, string) but found (string, string, number)
-  console.log(function_3('fieldId_2', '2021-05-21', 123));
-} catch (error) {
-  console.log('[Error]', error.message);
+    // Expected O/P: [Error] Invalid parameters: Expected (string, string, string) but found (string, string, number)
+    console.log(function_3('fieldId_2', '2021-05-21', 123));
+  } catch (error) {
+    console.log('[Error]', error.message);
+  }
 }
+
+// run()
 
 module.exports = function_3;
