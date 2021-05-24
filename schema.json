@@ -1,0 +1,393 @@
+{
+  "databaseName": "dashclick_backend_zone",
+  "createdBy": "Lakshya Dev Singh",
+  "createdAt": "24-May-2021",
+  "collections": {
+    "fields": [
+      {
+        "_id": "fieldId_1",
+        "name": "field_1",
+        "description": "desc 1",
+        "photo_urls": [
+          { "id": 1, "url": "url_1" },
+          { "id": 2, "url": "url_2" },
+          { "id": 3, "url": "url_3" }
+        ],
+        "gps_coordiantes": {
+          "latitude": "40.689263",
+          "longitde": "-74.044505",
+          "format": "DD"
+        },
+        "address": {
+          "country": "India",
+          "state": "Delhi",
+          "city": "Delhi",
+          "area": "Karkardooma",
+          "pin_code": 201001
+        },
+        "capacity": 500,
+        "booking_url": "www.bookmyfield.com/11231",
+        "booking_contacts": [
+          { "id": 1, "contact": 9911958741 },
+          { "id": 2, "contact": 7011958632 }
+        ]
+      },
+      {
+        "_id": "fieldId_2",
+        "name": "field_2",
+        "description": "desc 2",
+        "photo_urls": [
+          { "id": 1, "url": "url_1" },
+          { "id": 2, "url": "url_2" },
+          { "id": 3, "url": "url_3" }
+        ],
+        "gps_coordiantes": {
+          "latitude": "-52.689263",
+          "longitde": "23.044505",
+          "format": "DD"
+        },
+        "address": {
+          "country": "India",
+          "state": "Delhi",
+          "city": "Delhi",
+          "area": "Preet Vihaar",
+          "pin_code": 201002
+        },
+        "capacity": 700,
+        "booking_url": "www.bookmyfield.com/11232",
+        "booking_contacts": [
+          { "id": 1, "contact": 9123958741 },
+          { "id": 2, "contact": 7011238632 }
+        ]
+      }
+    ],
+    "games": [
+      {
+        "_id": "game_id_1",
+        "name": "Cricket",
+        "description": "Qualifier game 1",
+        "fieldId": "fieldId_1",
+        "slotId": "field_1_21_6_slot_1",
+        "date": "2021-05-21",
+        "startTime": "10:00:00.000Z",
+        "endTime": "11:00:00.000Z",
+        "isBookingAvailable": false,
+        "gameStatus": "COMPLETED",
+        "maximumEntries": 26,
+        "availableEntries": 0
+      },
+      {
+        "_id": "game_id_2",
+        "name": "Cricket",
+        "description": "Qualifier game 2",
+        "fieldId": "fieldId_1",
+        "timeSlotId": "field_1_21_6_slot_2",
+        "date": "2021-05-22",
+        "startTime": "13:00:00.000Z",
+        "endTime": "14:00:00.000Z",
+        "isBookingAvailable": false,
+        "gameStatus": "CANCELED",
+        "maximumEntries": 26,
+        "availableEntries": 0
+      },
+      {
+        "_id": "game_id_3",
+        "name": "Cricket",
+        "description": "Qualifier game 3",
+        "fieldId": "fieldId_2",
+        "timeSlotId": "field_2_24_6_slot_1",
+        "date": "2021-05-24",
+        "startTime": "16:00:00.000Z",
+        "endTime": "17:00:00.000Z",
+        "isBookingAvailable": false,
+        "gameStatus": "ACTIVE",
+        "maximumEntries": 26,
+        "availableEntries": 0
+      },
+      {
+        "_id": "game_id_4",
+        "name": "Cricket",
+        "description": "Qualifier game 4",
+        "fieldId": "fieldId_2",
+        "timeSlotId": "field_2_25_6_slot_1",
+        "date": "2021-05-25",
+        "startTime": "10:00:00.000Z",
+        "endTime": "11:00:00.000Z",
+        "isBookingAvailable": true,
+        "gameStatus": "NEW",
+        "maximumEntries": 26,
+        "availableEntries": 12
+      }
+    ],
+    "field_availability_slots": [
+      {
+        "fieldId": "fieldId_1",
+        "timeSlotsByDate": [
+          {
+            "date": "2021-05-21",
+            "timeSlots": [
+              {
+                "id": "field_1_24_6_slot_1",
+                "startTime": "10:00:00.000Z",
+                "endTime": "11:00:00.000Z",
+                "durationInHours": 1,
+                "isBooked": true
+              },
+              {
+                "id": "field_1_24_6_slot_2",
+                "startTime": "13:00:00.000Z",
+                "endTime": "14:00:00.000Z",
+                "durationInHours": 1,
+                "isBooked": true
+              }
+            ],
+            "totalSlots": 2,
+            "availableSlots": 0
+          },
+          {
+            "date": "2021-05-30",
+            "slots": [
+              {
+                "id": "field_1_30_6_slot_1",
+                "startTime": "10:00:00.000Z",
+                "endTime": "11:00:00.000Z",
+                "durationInHours": 1,
+                "isBooked": false
+              },
+              {
+                "id": "field_1_30_6_slot_2",
+                "startTime": "12:00:00.000Z",
+                "endTime": "13:00:00.000Z",
+                "durationInHours": 1,
+                "isBooked": false
+              }
+            ],
+            "totalSlots": 2,
+            "availableSlots": 2
+          }
+        ]
+      },
+      {
+        "fieldId": "fieldId_2",
+        "timeSlotsByDate": [
+          {
+            "date": "2021-05-24",
+            "timeSlots": [
+              {
+                "id": "field_2_24_6_slot_1",
+                "startTime": "16:00:00.000Z",
+                "endTime": "17:00:00.000Z",
+                "durationInHours": 1,
+                "isBooked": true
+              }
+            ],
+            "totalSlots": 1,
+            "availableSlots": 0
+          },
+          {
+            "date": "2021-05-25",
+            "slots": [
+              {
+                "id": "field_2_25_6_slot_1",
+                "startTime": "10:00:00.000Z",
+                "endTime": "11:00:00.000Z",
+                "durationInHours": 1,
+                "isBooked": true
+              },
+              {
+                "id": "field_2_25_6_slot_2",
+                "startTime": "12:00:00.000Z",
+                "endTime": "13:00:00.000Z",
+                "durationInHours": 1,
+                "isBooked": false
+              }
+            ],
+            "totalSlots": 2,
+            "availableSlots": 1
+          }
+        ]
+      }
+    ],
+    "users": [
+      {
+        "_id": "user_1",
+        "name": "user_name_1",
+        "age": 24,
+        "email": "user_1_email@games.com",
+        "contacts": [
+          { "id": 1, "contact": 9911953741 },
+          { "id": 2, "contact": 7012468632 }
+        ],
+        "isActive": true
+      },
+      {
+        "_id": "user_2",
+        "name": "user_name_2",
+        "age": 32,
+        "email": "user_2_email@games.com",
+        "contacts": [
+          { "id": 1, "contact": 9911998741 },
+          { "id": 2, "contact": 7012444432 }
+        ],
+        "isActive": true
+      }
+    ],
+    "game_signups": [
+      {
+        "userId": "user_1",
+        "signupsByDate": [
+          {
+            "date": "2021-05-21",
+            "signedUpGames": [
+              {
+                "gameId": "game_id_1",
+                "status": "PLAYED"
+              }
+            ],
+            "noOfSignedUpGames": 1,
+            "noOfPlayedGames": 1,
+            "noOfMissedGames": 0
+          },
+          {
+            "date": "2021-05-22",
+            "games": [
+              {
+                "gameId": "game_id_2",
+                "status": "MISSED"
+              }
+            ],
+            "noOfSignedUpGames": 1,
+            "noOfPlayedGames": 0,
+            "noOfMissedGames": 1
+          }
+        ]
+      },
+      {
+        "userId": "user_2",
+        "signupsByDate": [
+          {
+            "date": "2021-05-21",
+            "signedUpGames": [
+              {
+                "gameId": "game_id_1",
+                "status": "MISSED"
+              }
+            ],
+            "noOfSignedUpGames": 1,
+            "noOfPlayedGames": 0,
+            "noOfMissedGames": 1
+          },
+          {
+            "date": "2021-05-26",
+            "games": [
+              {
+                "gameId": "game_id_2",
+                "status": "READY"
+              }
+            ],
+            "noOfSignedUpGames": 1,
+            "noOfPlayedGames": 0,
+            "noOfMissedGames": 0
+          }
+        ]
+      }
+    ],
+    "game_reviews": [
+      {
+        "userId": "user_1",
+        "reviewsByGames": [
+          {
+            "gameId": "game_id_1",
+            "rating": 2.6,
+            "comments": "good game",
+            "isUsefull": 20,
+            "replies": [
+              {
+                "userId": "user_2",
+                "comments": "totally agreed!",
+                "isUsefull": 20,
+                "replies": []
+              }
+            ]
+          },
+          {
+            "gameId": "game_id_2",
+            "rating": 4,
+            "comments": "Didn't play :(",
+            "isUsefull": 20,
+            "replies": []
+          }
+        ]
+      },
+      {
+        "userId": "user_2",
+        "reviewsByGames": [
+          {
+            "gameId": "game_id_1",
+            "rating": 3,
+            "comments": "Didn't play :(",
+            "isUsefull": 20,
+            "replies": []
+          }
+        ]
+      }
+    ],
+    "game_chats": [
+      {
+        "game_id_1": [
+          {
+            "userId": "user_1",
+            "message": "some chat message",
+            "createdAtDate": "2021-05-21",
+            "createdAtTime": "10:21:32.323Z"
+          },
+          {
+            "userId": "user_2",
+            "message": "another chat message",
+            "createdAtDate": "2021-05-21",
+            "createdAtTime": "10:23:34.256Z"
+          }
+        ],
+        "game_id_2": [
+          {
+            "userId": "user_1",
+            "message": "some chat message",
+            "createdAtDate": "2021-05-21",
+            "createdAtTime": "10:21:32.323Z"
+          },
+          {
+            "userId": "user_2",
+            "message": "another chat message",
+            "createdAtDate": "2021-05-21",
+            "createdAtTime": "10:23:34.256Z"
+          }
+        ]
+      }
+    ],
+    "user_chats": [
+      {
+        "betweenUsers": ["user_1", "user_2"],
+        "chats": [
+          {
+            "fromUserId": "user_1",
+            "message": "Hi, ready for the game on 21st ??",
+            "date": "2021-05-19",
+            "time": "10:21:34.256Z"
+          },
+          {
+            "fromUserId": "user_2",
+            "message": "Hi! Sorry for late reply!",
+            "date": "2021-05-20",
+            "time": "10:00:34.256Z"
+          },
+          {
+            "fromUserId": "user_2",
+            "message": "No I think I'll pass, have been sick. :(",
+            "date": "2021-05-20",
+            "time": "10:01:22.167Z"
+          }
+        ]
+      }
+    ]
+  }
+}
