@@ -1,11 +1,14 @@
 <!-- PROJECT LOGO -->
+
+#
+
 <br />
 <p align="center">
   <a href="https://github.com/lakshyads/dashclicks-backend-zone">
     <img src="images/nosql-database.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">dashclick_backend_zone</h3>
+  <h3 align="center">dashclick-backend-zone</h3>
 
   <p align="center">
     A no-sql database schema with few query functions.
@@ -59,10 +62,13 @@ A hiring assignment for the role of backend engineer.
 ## Getting Started
 
 1. Clone the repo
+
    ```sh
    git clone https://github.com/lakshyads/dashclicks-backend-zone.git
    ```
+
 2. Execute `main.js` to try out the functions
+
    ```sh
    node main.js
    ```
