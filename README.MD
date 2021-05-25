@@ -8,7 +8,7 @@
     <img src="images/nosql-database.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">dashclick-backend-zone</h3>
+  <h3 align="center">dashclicks-backend-zone</h3>
 
   <p align="center">
     A no-sql database schema with few query functions.
