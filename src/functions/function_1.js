@@ -1,5 +1,5 @@
 // Import db
-const { collections } = require('./schema.json');
+const { collections } = require('../schemas/schema.json');
 
 /**
  * ## Function 1

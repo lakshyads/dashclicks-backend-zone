@@ -1,23 +1,5 @@
-// -----------------------------------------------------------------------------------------
-// FUNCTION 3:
-
-// A function that returns the number of unutilized Field Availability
-// slots for a given field for a given date range.
-
-// That means any Field Availability
-// slots that did/do not have a Game scheduled in that slot during the date
-// range.
-
-// 3 Inputs:
-//   - a field id,
-//   - start date,
-//   - end date
-
-// output: integer count
-// -----------------------------------------------------------------------------------------
-
 // Import db
-const { collections } = require('./schema.json');
+const { collections } = require('../schemas/schema.json');
 
 /**
  * ## Function 3
