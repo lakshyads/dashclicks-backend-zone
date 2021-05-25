@@ -2,6 +2,8 @@
 
 #
 
+[![MIT License][license-shield]][license-url]
+
 <br />
 <p align="center">
   <a href="https://github.com/lakshyads/dashclicks-backend-zone">
