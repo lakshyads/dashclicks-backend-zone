@@ -117,14 +117,15 @@ try {
 
 Write a single `JSON` "schema" file to represent the items below in a NoSQL database.
 
-Consider what can be nested versus flattened and related in some other way. 
-  - **Field** - description, directions, field photo urls, gps coordinates, etc. 
-  - **Game** - start time, location, etc. 
-  - **Field Availability Slot** - Typically an hour long slot at a field we have access to schedule a game. This is an exact day and time. 
-  - **User** - name, email, etc. 
-  - **Game Signup** - a user played (or will play) a specific game 
-  - **Game Review** - a user reviewed a game 05 stars, comment, etc.) 
-  - **Chat Message** - for both 1. games chats and 2. user to user chats
+Consider what can be nested versus flattened and related in some other way.
+
+- **Field** - description, directions, field photo urls, gps coordinates, etc.
+- **Game** - start time, location, etc.
+- **Field Availability Slot** - Typically an hour long slot at a field we have access to schedule a game. This is an exact day and time.
+- **User** - name, email, etc.
+- **Game Signup** - a user played (or will play) a specific game
+- **Game Review** - a user reviewed a game (0-5 stars, comment, etc.)
+- **Chat Message** - for both 1. games chats and 2. user to user chats
 
 Here is a starting example schema file (you will want a minimum of 1 dummy item in each collection to demonstrate the schema):
 
