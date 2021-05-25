@@ -8,7 +8,7 @@
   <h3 align="center">dashclick_backend_zone</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    A no-sql database schema with few query functions.
     <br />
     <a href="https://github.com/lakshyads/dashclicks-backend-zone"><strong>Explore the docs »</strong></a>
     <br />
