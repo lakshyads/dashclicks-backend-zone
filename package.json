@@ -1,0 +1,23 @@
+{
+  "name": "dashclicks-backend-zone-assignment",
+  "version": "1.0.0",
+  "description": "Assignment - create no-sql db schemas and query functions.",
+  "main": "src\\main.js",
+  "scripts": {
+    "start": "node src\\main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lakshyads/dashclicks-backend-zone.git"
+  },
+  "keywords": [
+    "JSON",
+    "JS"
+  ],
+  "author": "Lakshya Dev Singh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lakshyads/dashclicks-backend-zone/issues"
+  },
+  "homepage": "https://github.com/lakshyads/dashclicks-backend-zone#readme"
+}

@@ -73,6 +73,12 @@ A hiring assignment for the role of backend engineer.
    node main.js
    ```
 
+   OR
+
+   ```sh
+   npm start
+   ```
+
 ### Prerequisites
 
 A working installation of [Node.js](https://nodejs.org/en/) is required to run the javascript files.
